@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1EB97F625F5B79300BDA630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB97F525F5B79300BDA630 /* AppDelegate.swift */; };
+		B1EB97F825F5B79300BDA630 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB97F725F5B79300BDA630 /* SceneDelegate.swift */; };
+		B1EB97FA25F5B79300BDA630 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB97F925F5B79300BDA630 /* ViewController.swift */; };
+		B1EB97FD25F5B79300BDA630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EB97FB25F5B79300BDA630 /* Main.storyboard */; };
+		B1EB97FF25F5B79400BDA630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EB97FE25F5B79400BDA630 /* Assets.xcassets */; };
+		B1EB980225F5B79400BDA630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EB980025F5B79400BDA630 /* LaunchScreen.storyboard */; };
+		B1EB980B25F5B7F500BDA630 /* NumberScrollCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149FB6F239C69EE004A4807 /* NumberScrollCounter.swift */; };
+		B1EB980C25F5B7F500BDA630 /* DigitScrollCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149FB6D239C5F78004A4807 /* DigitScrollCounter.swift */; };
+		B1EB980D25F5B7F500BDA630 /* ScrollableCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E4C7802398ABD40043A9A1 /* ScrollableCounter.swift */; };
+		B1EB980E25F5B7F500BDA630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14426402399FBCE0038301E /* Extensions.swift */; };
 		E14426412399FBCE0038301E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14426402399FBCE0038301E /* Extensions.swift */; };
 		E149FB6E239C5F78004A4807 /* DigitScrollCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149FB6D239C5F78004A4807 /* DigitScrollCounter.swift */; };
 		E149FB70239C69EE004A4807 /* NumberScrollCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E149FB6F239C69EE004A4807 /* NumberScrollCounter.swift */; };
@@ -15,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1EB97F325F5B79300BDA630 /* ScrollCounterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollCounterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1EB97F525F5B79300BDA630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1EB97F725F5B79300BDA630 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1EB97F925F5B79300BDA630 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1EB97FC25F5B79300BDA630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1EB97FE25F5B79400BDA630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1EB980125F5B79400BDA630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1EB980325F5B79400BDA630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14426402399FBCE0038301E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E149FB6D239C5F78004A4807 /* DigitScrollCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitScrollCounter.swift; sourceTree = "<group>"; };
 		E149FB6F239C69EE004A4807 /* NumberScrollCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberScrollCounter.swift; sourceTree = "<group>"; };
@@ -25,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B1EB97F025F5B79300BDA630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1E4C72B2398A7660043A9A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,9 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1EB97F425F5B79300BDA630 /* ScrollCounterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B1EB97F525F5B79300BDA630 /* AppDelegate.swift */,
+				B1EB97F725F5B79300BDA630 /* SceneDelegate.swift */,
+				B1EB97F925F5B79300BDA630 /* ViewController.swift */,
+				B1EB97FB25F5B79300BDA630 /* Main.storyboard */,
+				B1EB97FE25F5B79400BDA630 /* Assets.xcassets */,
+				B1EB980025F5B79400BDA630 /* LaunchScreen.storyboard */,
+				B1EB980325F5B79400BDA630 /* Info.plist */,
+			);
+			path = ScrollCounterDemo;
+			sourceTree = "<group>";
+		};
 		E1E4C7242398A7660043A9A1 = {
 			isa = PBXGroup;
 			children = (
+				B1EB97F425F5B79300BDA630 /* ScrollCounterDemo */,
 				E1E4C7302398A7660043A9A1 /* ScrollCounter */,
 				E1E4C72F2398A7660043A9A1 /* Products */,
 			);
@@ -47,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E1E4C72E2398A7660043A9A1 /* ScrollCounter.framework */,
+				B1EB97F325F5B79300BDA630 /* ScrollCounterDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +119,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B1EB97F225F5B79300BDA630 /* ScrollCounterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1EB980625F5B79400BDA630 /* Build configuration list for PBXNativeTarget "ScrollCounterDemo" */;
+			buildPhases = (
+				B1EB97EF25F5B79300BDA630 /* Sources */,
+				B1EB97F025F5B79300BDA630 /* Frameworks */,
+				B1EB97F125F5B79300BDA630 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollCounterDemo;
+			productName = ScrollCounterDemo;
+			productReference = B1EB97F325F5B79300BDA630 /* ScrollCounterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E1E4C72D2398A7660043A9A1 /* ScrollCounter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1E4C7362398A7660043A9A1 /* Build configuration list for PBXNativeTarget "ScrollCounter" */;
@@ -102,9 +160,13 @@
 		E1E4C7252398A7660043A9A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Stokaty;
 				TargetAttributes = {
+					B1EB97F225F5B79300BDA630 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					E1E4C72D2398A7660043A9A1 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
@@ -125,11 +187,22 @@
 			projectRoot = "";
 			targets = (
 				E1E4C72D2398A7660043A9A1 /* ScrollCounter */,
+				B1EB97F225F5B79300BDA630 /* ScrollCounterDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B1EB97F125F5B79300BDA630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EB980225F5B79400BDA630 /* LaunchScreen.storyboard in Resources */,
+				B1EB97FF25F5B79400BDA630 /* Assets.xcassets in Resources */,
+				B1EB97FD25F5B79300BDA630 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1E4C72C2398A7660043A9A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +213,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B1EB97EF25F5B79300BDA630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EB980C25F5B7F500BDA630 /* DigitScrollCounter.swift in Sources */,
+				B1EB980B25F5B7F500BDA630 /* NumberScrollCounter.swift in Sources */,
+				B1EB97FA25F5B79300BDA630 /* ViewController.swift in Sources */,
+				B1EB97F625F5B79300BDA630 /* AppDelegate.swift in Sources */,
+				B1EB97F825F5B79300BDA630 /* SceneDelegate.swift in Sources */,
+				B1EB980D25F5B7F500BDA630 /* ScrollableCounter.swift in Sources */,
+				B1EB980E25F5B7F500BDA630 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1E4C72A2398A7660043A9A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +240,68 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		B1EB97FB25F5B79300BDA630 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1EB97FC25F5B79300BDA630 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1EB980025F5B79400BDA630 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1EB980125F5B79400BDA630 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B1EB980425F5B79400BDA630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4Z2NCTR3S;
+				INFOPLIST_FILE = ScrollCounterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iAugus.ScrollCounterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1EB980525F5B79400BDA630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4Z2NCTR3S;
+				INFOPLIST_FILE = ScrollCounterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iAugus.ScrollCounterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E1E4C7342398A7660043A9A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,6 +478,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B1EB980625F5B79400BDA630 /* Build configuration list for PBXNativeTarget "ScrollCounterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1EB980425F5B79400BDA630 /* Debug */,
+				B1EB980525F5B79400BDA630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1E4C7282398A7660043A9A1 /* Build configuration list for PBXProject "ScrollCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
