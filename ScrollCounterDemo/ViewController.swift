@@ -13,14 +13,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        counter.translatesAutoresizingMaskIntoConstraints = false
+        leadingCouter.translatesAutoresizingMaskIntoConstraints = false
+        centerCounter.translatesAutoresizingMaskIntoConstraints = false
+        trailingCouter.translatesAutoresizingMaskIntoConstraints = false
         button.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(counter)
+        view.addSubview(leadingCouter)
+        view.addSubview(centerCounter)
+        view.addSubview(trailingCouter)
         view.addSubview(button)
 
         NSLayoutConstraint.activate([
-            counter.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            counter.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            leadingCouter.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            leadingCouter.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            centerCounter.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            centerCounter.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            trailingCouter.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            trailingCouter.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             button.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             button.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             button.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -28,7 +36,19 @@ class ViewController: UIViewController {
         ])
     }
 
-    private lazy var counter: NumberScrollCounter = {
+    private lazy var trailingCouter: NumberScrollCounter = {
+        let counter = NumberScrollCounter(value: .zero, scrollDuration: 0.6, decimalPlaces: 2, prefix: "$", textColor: .black)
+        counter.backgroundColor = .yellow
+        return counter
+    }()
+
+    private lazy var leadingCouter: NumberScrollCounter = {
+        let counter = NumberScrollCounter(value: .zero, scrollDuration: 0.6, decimalPlaces: 2, prefix: "$", textColor: .black)
+        counter.backgroundColor = .blue
+        return counter
+    }()
+
+    private lazy var centerCounter: NumberScrollCounter = {
         let counter = NumberScrollCounter(value: .zero, scrollDuration: 0.6, decimalPlaces: 2, prefix: "$", textColor: .black)
         counter.backgroundColor = .red
         return counter
@@ -45,6 +65,8 @@ class ViewController: UIViewController {
 
     @objc
     private func handleButtonTapped() {
-        counter.setValue(Float.random(in: 0...200))
+        leadingCouter.setValue(Float.random(in: 0...200))
+        trailingCouter.setValue(Float.random(in: 0...200))
+        centerCounter.setValue(Float.random(in: 0...200))
     }
 }
