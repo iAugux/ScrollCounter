@@ -129,9 +129,6 @@ public class NumberScrollCounter: UIView {
         self.clipsToBounds = false
         
         setValue(value, animated: animateInitialValue)
-        frame.size.height = digitScrollers.first!.height
-        
-        sizeToFit()
     }
     
     required init?(coder: NSCoder) {
@@ -139,17 +136,9 @@ public class NumberScrollCounter: UIView {
     }
     
     public override func sizeToFit() {
-        var width: CGFloat = 0
-        
-        if let suffixView = suffixView {
-            width = suffixView.frame.origin.x + suffixView.frame.width
-        } else if let lastDigit = digitScrollers.last {
-            width = lastDigit.frame.origin.x + lastDigit.frame.width
-        }
-        
-        self.frame.size.width = width
+        resize()
     }
-    
+
     // MARK: - Control
     
     /**
@@ -185,7 +174,31 @@ public class NumberScrollCounter: UIView {
         
         updateScrollers(withDigits: digitsOnly, animated: animated)
         updateScrollerLayout(animated: animated)
+
+        resize(animated: animated)
     }
+
+    private func resize(animated: Bool = false) {
+        var width: CGFloat = 0
+        if let suffixView = suffixView {
+            width = suffixView.frame.origin.x + suffixView.frame.width
+        } else if let lastDigit = digitScrollers.last {
+            width = lastDigit.frame.origin.x + lastDigit.frame.width
+        }
+        let size = CGSize(width: width, height: digitScrollers[0].height)
+        frame.size = size
+        widthConstraint.isActive = true
+        heightConstraint.isActive = true
+        UIView.animate(withDuration: animated ? slideDuration : 0) {
+            self.widthConstraint.constant = size.width
+            self.heightConstraint.constant = size.height
+            self.superview?.layoutIfNeeded()
+        }
+    }
+
+    private lazy var widthConstraint = widthAnchor.constraint(equalToConstant: 0)
+    private lazy var heightConstraint = heightAnchor.constraint(equalToConstant: 0)
+
     
     /**
      Converts the given float to an array of strings.
